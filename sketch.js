@@ -26,8 +26,7 @@ let roster = [{firstName:"Zainib", lastName:"Ahmed", color:"Blue", animal:"Giraf
 function  setup() {
 createCanvas(800,800);
 background(200);
-textSize(40);
-fill(0, 102, 153);
+textSize(32);
 }
 
 function draw() {
@@ -42,7 +41,8 @@ text(roster[randomIndex].book,300,300);
 text(roster[randomIndex].movie,500,500);
 roster.splice(randomIndex,1);
 } else {
-  background(255);
+  background(0);
   text("nothing left.", 100, 100);
+  fill(255);
 }
 }
