@@ -1,4 +1,6 @@
 
+let randomIndex;
+
 let roster = [{firstName:"Zainib", lastName:"Ahmed", color:"Blue", animal:"Giraffe", book:"The Book Thief", movie:"Amelie", game:"none", superHero:"The Hulk", randomFact:"I love to eat olives."},
 {firstName: "Toni",  lastName:"Anguiano",color:"blue", animal: "cat", book: "The Bell Jar", movie: "Horror",superHero: "batman", randomFact: "I like to hangout in cemeteries and research dark California history"},
 {firstName: "Camila",lastName: "Avina Garcia",color: "Green",animal:"Dog",book:"Match",movie:"Lady and the Tramp",game:" Guitar Hero",superHero:"Spiderman",randomFact:"I have a twin"},
@@ -24,10 +26,14 @@ let roster = [{firstName:"Zainib", lastName:"Ahmed", color:"Blue", animal:"Giraf
 function  setup() {
 createCanvas(800,800);
 background(200);
-console.log(int(random(roster.length)));
-text(roster[int(random(roster.length))].firstName,400,400);
-console.log(roster[1].movie);
 }
 
 function draw() {
+}
+
+function mousePressed() {
+  background(200);
+randomIndex = int(random(roster.length));
+text(roster[randomIndex].firstName,400,400);
+roster.splice(randomIndex,1);
 }
