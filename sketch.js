@@ -33,7 +33,7 @@ function draw() {
 
 function mousePressed() {
   background(random(200, 255));
-randomIndex = int(random(roster.length));
+randomIndex = int(random(roster.length)); 
 text(roster[randomIndex].firstName,400,400);
 text(roster[randomIndex].book,300,300);
 text(roster[randomIndex].movie,500,500);
