@@ -26,6 +26,8 @@ let roster = [{firstName:"Zainib", lastName:"Ahmed", color:"Blue", animal:"Giraf
 function  setup() {
 createCanvas(800,800);
 background(200);
+textSize(40);
+fill(0, 102, 153);
 }
 
 function draw() {
