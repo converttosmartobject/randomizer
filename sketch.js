@@ -26,7 +26,8 @@ let roster = [{firstName:"Zainib", lastName:"Ahmed", color:"Blue", animal:"Giraf
 function  setup() {
 createCanvas(800,800);
 background(200);
-textSize(4);
+textSize(8);
+text("click to randomize");
 }
 
 function draw() {
