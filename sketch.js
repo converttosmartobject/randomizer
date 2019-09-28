@@ -42,6 +42,7 @@ text(roster[randomIndex].book,300,300);
 text(roster[randomIndex].movie,500,500);
 roster.splice(randomIndex,1);
 } else {
+  background(255);
   text("nothing left.", 100, 100);
 }
 }
