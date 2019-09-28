@@ -32,11 +32,14 @@ function draw() {
 }
 
 function mousePressed() {
+  if (roster[0]) {
   background(random(200, 255));
-randomIndex = int(random(roster.length)); 
+randomIndex = int(random(roster.length));
 text(roster[randomIndex].firstName,400,400);
 text(roster[randomIndex].book,300,300);
 text(roster[randomIndex].movie,500,500);
-
 roster.splice(randomIndex,1);
+} else {
+  text("nothing left.", 100, 100);
+}
 }
