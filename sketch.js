@@ -35,7 +35,7 @@ function mousePressed() {
   background(200);
 randomIndex = int(random(roster.length));
 text(roster[randomIndex].firstName,400,400);
-text(roster[randomIndex].book,300,300);
+text(roster[randomIndex].book,50,50);
 
 roster.splice(randomIndex,1);
 }
