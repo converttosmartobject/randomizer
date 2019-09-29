@@ -28,7 +28,7 @@ createCanvas(800,800);
 textSize(14);
 background(255);
 fill(0);
-text("click to randomize", 700, 10);
+text("click to randomize", 600, 600);
 }
 
 function draw() {
