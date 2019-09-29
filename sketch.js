@@ -29,18 +29,12 @@ textSize(14);
 background(255);
 fill(0);
 text("click to randomize", 600, 600);
-setTimeout(changeBackground, 1000);
 }
 
 function draw() {
 }
 
-function changeBackground(){
-  background(random(255), random(255), random(255));
-  setTimeout(changeBackground, 1000);
-}
-
-function mousePressed() {
+function randomizer(){
   if (roster[0]) {
   background(random(200, 255));
 randomIndex = int(random(roster.length));
@@ -53,5 +47,9 @@ roster.splice(randomIndex,1);
   textSize(100);
   text("nothing left.", 10, 700);
   fill(255);
+}
+
+function mousePressed() {
+setTimeout(randomizer, 2000);
 }
 }
