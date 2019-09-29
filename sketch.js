@@ -38,11 +38,6 @@ function draw() {
   }
 }
 
-function mousePressed() {
-  animating = true;
-setTimeout(randomizer, 2000);
-}
-
 function randomizer(){
   animating = false;
   if (roster[0]) {
@@ -59,5 +54,9 @@ roster.splice(randomIndex,1);
   fill(255);
 }
 
+function mousePressed() {
+  animating = true;
+setTimeout(randomizer, 2000);
+}
 
 }
