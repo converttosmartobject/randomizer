@@ -36,7 +36,7 @@ function draw() {
   if(animating == true){
     ellipse(random(width), random(height), random(40, 300));
   }
-} 
+}
 
 function randomizer(){
   animating = false;
@@ -53,7 +53,7 @@ roster.splice(randomIndex,1);
   text("nothing left.", 10, 700);
   fill(255);
 }
-
+ 
 function mousePressed() {
   animating = true;
 setTimeout(randomizer, 2000);
