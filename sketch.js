@@ -25,7 +25,7 @@ let roster = [{firstName:"Zainib", lastName:"Ahmed", color:"Blue", animal:"Giraf
 {firstName: "asra", lastName: "siddiqui", color: "idk", animal: "chameleons", book: "codex 1962", movie: "pulp fiction", game: "idk", superHero: "hate em all", randomFact: "im grumpy"}];
 
 function  setup() {
-createCanvas(700,800);
+createCanvas(800,800);
 textSize(14);
 background(255);
 fill(0);
@@ -34,6 +34,8 @@ text("click to randomize", 600, 600);
 
 function draw() {
   if(animating == true){
+    fill(random(255), random(255), random(255));
+    noStroke();
     ellipse(random(width), random(height), random(40, 300));
   }
 }
@@ -58,5 +60,4 @@ function mousePressed() {
   animating = true;
 setTimeout(randomizer, 2000);
 }
-
 }
