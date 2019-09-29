@@ -1,5 +1,6 @@
 
 let randomIndex;
+let animating = false;
 
 let roster = [{firstName:"Zainib", lastName:"Ahmed", color:"Blue", animal:"Giraffe", book:"The Book Thief", movie:"Amelie", game:"none", superHero:"The Hulk", randomFact:"I love to eat olives."},
 {firstName: "Toni",  lastName:"Anguiano",color:"blue", animal: "cat", book: "The Bell Jar", movie: "Horror",superHero: "batman", randomFact: "I like to hangout in cemeteries and research dark California history"},
@@ -32,9 +33,13 @@ text("click to randomize", 600, 600);
 }
 
 function draw() {
+  if(animating == true){
+    ellipse(random(width), random(height), random(40, 300));
+  }
 }
 
 function randomizer(){
+  animating = false;
   if (roster[0]) {
   background(random(200, 255));
 randomIndex = int(random(roster.length));
@@ -50,6 +55,7 @@ roster.splice(randomIndex,1);
 }
 
 function mousePressed() {
+  animating = true;
 setTimeout(randomizer, 2000);
 }
 }
