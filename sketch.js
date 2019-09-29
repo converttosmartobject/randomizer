@@ -29,9 +29,14 @@ textSize(14);
 background(255);
 fill(0);
 text("click to randomize", 600, 600);
+setTimeout(changeBackground, 1000);
 }
 
 function draw() {
+}
+
+function changeBackground(){
+  background(random(255), random(255), random(255));
 }
 
 function mousePressed() {
