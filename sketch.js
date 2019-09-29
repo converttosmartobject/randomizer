@@ -36,7 +36,7 @@ function draw() {
   if(animating == true){
     ellipse(random(width), random(height), random(40, 300));
   }
-}
+} 
 
 function randomizer(){
   animating = false;
