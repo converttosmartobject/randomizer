@@ -1,6 +1,6 @@
 
 let randomIndex;
-let animating = false; 
+let animating = false;
 
 let roster = [{firstName:"Zainib", lastName:"Ahmed", color:"Blue", animal:"Giraffe", book:"The Book Thief", movie:"Amelie", game:"none", superHero:"The Hulk", randomFact:"I love to eat olives."},
 {firstName: "Toni",  lastName:"Anguiano",color:"blue", animal: "cat", book: "The Bell Jar", movie: "Horror",superHero: "batman", randomFact: "I like to hangout in cemeteries and research dark California history"},
@@ -15,14 +15,14 @@ let roster = [{firstName:"Zainib", lastName:"Ahmed", color:"Blue", animal:"Giraf
 {firstName:"Sumedh",lastName: "Vedanthi",color:"Blue" ,animal: "Crow",book: "Of Mice and Men",movie: "American Psycho",game: "Fruit Ninja" ,superHero: "Batman" ,randomFact: "im a black belt"},
 {firstName:"Chris",lastName: "Weber",color: "green",animal: "cat",book: "Hitchhiker's Guide to the Galaxy",movie: "Spiderman Into The Spiderverse",game: "The Legend of Zelda Breath of the Wild",superHero: "Iron Man",randomFact: "I'm vegetarian"},
 {firstName:"Andy", lastName: "Wu", color: "Red", animal:"Kiwi", book: "Romance of the Three Kingdoms", movie:"Shrek 2", game: "Super Mario 64", superHero: "Static Shock", randomFact:"I've had jaw correction surgery"},
-{firstName:"xiaowei",lastName: "zheng",color:" green",animal: "babies",book: "the little girl at the window",movie: "eat drink man woman",game: "none",superHero: "none",randomFact: "don't drink coke"},
+{firstName:"Xiaowei",lastName: "Zheng",color:" green",animal: "babies",book: "the little girl at the window",movie: "eat drink man woman",game: "none",superHero: "none",randomFact: "don't drink coke"},
 {firstName: "Hector", lastName: "Flores", Color: "Blue",Animal:"Dog",Book:"Captain Underpants", Movie:"Ace Ventura pet detective", Game:"Smash Brothers", superHero:"Flash", randomFact:"I am a Libra"},
 {firstName: "Matteo", lastName: "Leva", Color: "Black", Animal: "Cat", Book: "Pillars of the earth", Movie:"The Godfather", Game: "Witcher 3", superHero: "spider man", randomFact:"I'm disappointed in GOT season 8"},
 {firstName:"Kevin", lastName:"Sagara", color:"yellow", animal:"cat", book:"sherlock holmes", movie:"Shaun of the Dead", game:"osu!", superHero:"batman", randomFact:"learning japanese"},
 {firstName: "Anthony", lastName: "Valdovinos", color:"purple",animal: "eagle",book: "Hatchet",movie: "Titanic",game: "Starfox Adventures",superHero: "none", randomFact: "I studied Japanese for 4 years"},
 {firstName: "Rachel", lastName: "Centinaje", color: "green", animal:"dogs", book: "none", movie:"Drive", game: "Dishonored", superHero: "Deadpool", randomFact:"I went camping this weekend"},
 {firstName:"Alicia",lastName:"Breinke", color: "purple", animal: "dog", book:"The Art of Racing in the Rain", movie: "Spirited Away", superHero: "Wonder Woman", randomFact: "I want to live in another country someday"},
-{firstName: "asra", lastName: "siddiqui", color: "idk", animal: "chameleons", book: "codex 1962", movie: "pulp fiction", game: "idk", superHero: "hate em all", randomFact: "im grumpy"}];
+{firstName: "Asra", lastName: "Siddiqui", color: "idk", animal: "chameleons", book: "codex 1962", movie: "pulp fiction", game: "idk", superHero: "hate em all", randomFact: "im grumpy"}];
 
 function  setup() {
 createCanvas(800,800);
