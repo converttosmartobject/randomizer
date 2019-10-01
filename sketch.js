@@ -55,9 +55,8 @@ roster.splice(randomIndex,1);
   text("nothing left.", 10, 700);
   fill(255);
 }
-
+}
 function mousePressed() {
   animating = true;
 setTimeout(randomizer, 2000);
-}
 }
