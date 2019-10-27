@@ -1,6 +1,7 @@
 
 let randomIndex;
 let animating = false;
+let button;
 
 let roster = [{firstName:"Zainib", lastName:"Ahmed", color:"Blue", animal:"Giraffe", book:"The Book Thief", movie:"Amelie", game:"none", superHero:"The Hulk", randomFact:"I love to eat olives."},
 {firstName: "Toni",  lastName:"Anguiano",color:"blue", animal: "cat", book: "The Bell Jar", movie: "Horror",superHero: "batman", randomFact: "I like to hangout in cemeteries and research dark California history"},
@@ -27,9 +28,13 @@ let roster = [{firstName:"Zainib", lastName:"Ahmed", color:"Blue", animal:"Giraf
 function  setup() {
 createCanvas(800,800);
 textSize(14);
+textStyle(BOLD);
 background(255);
 fill(0);
 text("click to randomize", 600, 600);
+button = createButton("click to randomize!!");
+button.mousePressed(buttonPressed);
+button.class("randomizerButton");
 }
 
 function draw() {
@@ -56,7 +61,7 @@ roster.splice(randomIndex,1);
   fill(255);
 }
 }
-function mousePressed() {
+function buttonPressed() {
   animating = true;
 setTimeout(randomizer, 2000);
 }
