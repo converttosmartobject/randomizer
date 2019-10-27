@@ -26,13 +26,14 @@ let roster = [{firstName:"Zainib", lastName:"Ahmed", color:"Blue", animal:"Giraf
 {firstName: "Asra", lastName: "Siddiqui", color: "idk", animal: "chameleons", book: "codex 1962", movie: "pulp fiction", game: "idk", superHero: "hate em all", randomFact: "im grumpy"}];
 
 function  setup() {
-createCanvas(800,800);
+createCanvas(600,600);
 textSize(14);
 textStyle(BOLD);
 background(255);
 fill(0);
 text("click to randomize", 600, 600);
-button = createButton("click to randomize!!");
+// button = createButton("click to randomize!!");
+button = select("#randButton");
 button.mousePressed(buttonPressed);
 button.class("randomizerButton");
 }
@@ -50,9 +51,9 @@ function randomizer(){
   if (roster[0]) {
   background(random(200, 255));
 randomIndex = int(random(roster.length));
-text(roster[randomIndex].firstName,400,400);
-text(roster[randomIndex].book,300,300);
-text(roster[randomIndex].movie,500,500);
+text(roster[randomIndex].firstName,300,300);
+text(roster[randomIndex].book,200,200);
+text(roster[randomIndex].movie,400,400);
 roster.splice(randomIndex,1);
 } else {
   background(0);
