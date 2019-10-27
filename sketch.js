@@ -2,6 +2,7 @@
 let randomIndex;
 let animating = false;
 let button;
+let cnv;
 
 let roster = [{firstName:"Zainib", lastName:"Ahmed", color:"Blue", animal:"Giraffe", book:"The Book Thief", movie:"Amelie", game:"none", superHero:"The Hulk", randomFact:"I love to eat olives."},
 {firstName: "Toni",  lastName:"Anguiano",color:"blue", animal: "cat", book: "The Bell Jar", movie: "Horror",superHero: "batman", randomFact: "I like to hangout in cemeteries and research dark California history"},
@@ -26,12 +27,13 @@ let roster = [{firstName:"Zainib", lastName:"Ahmed", color:"Blue", animal:"Giraf
 {firstName: "Asra", lastName: "Siddiqui", color: "idk", animal: "chameleons", book: "codex 1962", movie: "pulp fiction", game: "idk", superHero: "hate em all", randomFact: "im grumpy"}];
 
 function  setup() {
-createCanvas(600,600);
+cnv = createCanvas(600,600);
+cnv.parent("#canvasDiv");
 textSize(14);
 textStyle(BOLD);
 background(255);
 fill(0);
-text("click to randomize", 600, 600);
+// text("click to randomize", 600, 600);
 // button = createButton("click to randomize!!");
 button = select("#randButton");
 button.mousePressed(buttonPressed);
