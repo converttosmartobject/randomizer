@@ -11,6 +11,11 @@ canvas {
   background-color: #8eadde;
 }
 
+.addMoreButton {
+  padding: 20px;
+  background-color: #8eadde;
+}
+
 .row {
   display: flex;
 }

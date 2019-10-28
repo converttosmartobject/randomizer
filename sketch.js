@@ -5,8 +5,8 @@ let startRandomizerButton;
 let addMoreButton;
 let cnv;
 let nameInputs = [];
-
 let roster = [];
+let firstTime = true;
 
 function  setup() {
 
@@ -32,7 +32,7 @@ nameInputs[nameInputs.length - 1].parent("#inputFields");
 
 function draw() {
   if(animating == true){
-    fill(random(255), random(255), random(255));
+    fill(255);
     noStroke();
     ellipse(random(width), random(height), random(40, 300));
   }
@@ -46,20 +46,27 @@ function addAnotherInput(){
 function randomizer(){
   animating = false;
   if (roster[0]) {
-  background(random(200, 255));
+  background(random(255));
 randomIndex = int(random(roster.length));
 text(roster[randomIndex],300,300);
-// text(roster[randomIndex].book,200,200);
-// text(roster[randomIndex].movie,400,400);
 roster.splice(randomIndex,1);
 } else {
   background(0);
-  textSize(100);
-  text("nothing left.", 10, 700);
-  fill(255);
+  textSize(50);
+  text("nothing left.", 250, 550);
+  fill(random(255), random(255), random(255));
 }
 }
+
 function buttonPressed() {
+
+if (firstTime == true){
+  for (let i = 0; i < nameInputs.length; i++) {
+    roster.push(nameInputs[i].value());
+  }
+  firstTime = false;
+}
+
   animating = true;
 setTimeout(randomizer, 2000);
 }
